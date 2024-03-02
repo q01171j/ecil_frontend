@@ -1,30 +1,44 @@
-import Airplay from "./Airplay";
-import BagSimple from "./BagSimple";
-import Books from "./Books";
-import Briefcase from "./Briefcase";
-import EnvelopeSimple from "./EnvelopeSimple";
-import Gear from "./Gear";
-import Handshake from "./Handshake";
-import List from "./List";
-import MagnifyingGlass from "./MagnifyingGlass";
-import MapPin from "./MapPin";
-import Moon from "./Moon";
-import Phone from "./Phone";
-import Sun from "./Sun";
-import Users from "./Users";
-import X from "./X";
-import BookBookmark from "./BookBookmark";
-import Facebook from "./Facebook";
-import Whatsapp from "./Whatsapp";
-import TikTok from "./TikTok";
+import Airplay from "./regular/Airplay";
+import BagSimple from "./regular/BagSimple";
+import Books from "./regular/Books";
+import Briefcase from "./regular/Briefcase";
+import EnvelopeSimple from "./regular/EnvelopeSimple";
+import Gear from "./regular/Gear";
+import Handshake from "./regular/Handshake";
+import List from "./regular/List";
+import MagnifyingGlass from "./regular/MagnifyingGlass";
+import MapPin from "./regular/MapPin";
+import Moon from "./regular/Moon";
+import Phone from "./regular/Phone";
+import Sun from "./regular/Sun";
+import Users from "./regular/Users";
+import X from "./regular/X";
+import BookBookmark from "./regular/BookBookmark";
+import Facebook from "./regular/Facebook";
+import Whatsapp from "./regular/Whatsapp";
+import TikTok from "./regular/TikTok";
+import CaretRight from "./regular/CaretRight";
+import CaretDown from "./regular/CaretDown";
+import CaretLeft from "./regular/CaretLeft";
+import PhoneCall from "./regular/PhoneCall";
+import PhoneCallFill from "./fill/PhoneCallFill";
+import Chats from "./regular/Chats";
+import Triangle from "./regular/Triangle";
+import Trophy from "./regular/Trophy";
+import Flag from "./regular/Flag";
+import NavigationArrow from "./regular/NavigationArrow";
+import Lightbulb from "./regular/Lightbulb";
 
 export {
     Airplay,
+    Lightbulb,
     BagSimple,
     Books,
     Briefcase,
     EnvelopeSimple,
+    Trophy,
     Gear,
+    NavigationArrow,
     Handshake,
     List,
     MagnifyingGlass,
@@ -35,8 +49,16 @@ export {
     Users,
     BookBookmark,
     Facebook,
+    Triangle,
     Whatsapp,
     TikTok,
+    CaretRight,
+    CaretDown,
+    Flag,
+    Chats,
+    CaretLeft,
+    PhoneCallFill,
+    PhoneCall,
     X
 }
 

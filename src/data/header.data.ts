@@ -1,24 +1,37 @@
 import roots from "./roots.data";
 
 const headerData = {
+    index: roots.index,
     links: [
         {
-            name: 'Nosotros',
+            title: "Nosotros",
             link: roots.about,
         },
         {
-            name: 'Cursos',
+            title: "Cursos",
             link: roots.courses,
         },
         {
-            name: 'Ofertas Laborales',
+            title: "Ofertas Laborales",
             link: roots.jobs,
         },
         {
-            name: 'Convenios',
+            title: "Convenios",
             link: roots.agreements,
-        }
-    ]
+        },
+    ],
+    register: {
+        title: "Registrate",
+        link: roots.signUp,
+    },
+    login: {
+        title: "Ingresar",
+        link: roots.signIn,
+    },
+    dashboard: {
+        title: "Plataforma",
+        link: roots.platform,
+    },
 };
 
 export default headerData;

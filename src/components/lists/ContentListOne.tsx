@@ -1,9 +1,9 @@
-import { LinkItem } from "@components";
+import { LinkItemOne } from "@components";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { ContentListItemsProps } from "@interfaces";
 
-function ContentListItems({ data, classContainer, classTitle, classLink }: ContentListItemsProps) {
+function ContentListOne({ data, classContainer, classTitle, classLink }: ContentListItemsProps) {
 
     return (
         <div className={twMerge(clsx(
@@ -17,7 +17,7 @@ function ContentListItems({ data, classContainer, classTitle, classLink }: Conte
             <nav className={`grid`}>
                 {
                     data.links.map((item, index) => (
-                        <LinkItem
+                        <LinkItemOne
                             key={index}
                             href={item.url}
                             className={clsx(
@@ -25,7 +25,7 @@ function ContentListItems({ data, classContainer, classTitle, classLink }: Conte
                             )}
                         >
                             {item.title}
-                        </LinkItem>
+                        </LinkItemOne>
                     ))
                 }
             </nav>
@@ -33,4 +33,4 @@ function ContentListItems({ data, classContainer, classTitle, classLink }: Conte
     )
 }
 
-export default ContentListItems
+export default ContentListOne

@@ -21,6 +21,8 @@ const linksApi = [
 ]
 
 const footerData = {
+    index: roots.index,
+
     info: [
         {
             icon: MapPin as IconComponent,
@@ -63,11 +65,11 @@ const footerData = {
         }))
     },
     help: {
-        title: 'Ayuda',
+        title: 'Nosotros',
         links: [
             {
-                url: roots.contact,
-                title: 'Contacto'
+                url: roots.about,
+                title: 'Contactanos'
             },
             {
                 url: roots.faq,

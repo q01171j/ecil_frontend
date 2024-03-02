@@ -5,7 +5,7 @@ import { LinkItemProps } from '@interfaces'
 
 
 
-function LinkItem({ children, className, href }: LinkItemProps) {
+function LinkItemOne({ children, className, href }: LinkItemProps) {
   return (
     <Link
         to={href}
@@ -19,4 +19,4 @@ function LinkItem({ children, className, href }: LinkItemProps) {
   )
 }
 
-export default LinkItem
+export default LinkItemOne
