@@ -5,7 +5,7 @@ import { LinkItemProps } from '@interfaces'
 
 
 
-function LinkItemOne({ children, className, href }: LinkItemProps) {
+function LinkItemOne({ children, className, href, onClick }: LinkItemProps) {
   return (
     <Link
         to={href}
@@ -13,6 +13,7 @@ function LinkItemOne({ children, className, href }: LinkItemProps) {
             "my-3 text-sm transition-all hover:text-[#2F6B85] hover:fill-[#2F6B85]",
             className
         ))}
+        onClick={onClick}
     >
         {children}
     </Link>

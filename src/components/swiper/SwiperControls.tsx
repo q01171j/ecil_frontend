@@ -3,14 +3,16 @@ import { CaretLeft, CaretRight } from "@icons";
 
 interface SwiperControlsProps {
     textButton: string;
+    handlePrev: () => void;
+    handleNext: () => void;
 }
 
-function SwiperControls({ textButton }: SwiperControlsProps) {
+function SwiperControls({ textButton, handlePrev, handleNext }: SwiperControlsProps) {
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-4">
             <div className="flex gap-4">
                 <ButtonTwo
-                    onClick={() => {}}
+                    onClick={handlePrev}
                     className="bg-transparent text-2xl px-1.5 fill-[#E7AF28] border-[#E7AF28] hover:bg-[#E7AF28] hover:fill-white hover:border-[#E7AF28]"
                 >
                     <CaretLeft />
@@ -24,7 +26,7 @@ function SwiperControls({ textButton }: SwiperControlsProps) {
                 </ButtonOne>
 
                 <ButtonTwo
-                    onClick={() => {}}
+                    onClick={handleNext}
                     className="bg-transparent text-2xl px-1.5 fill-[#E7AF28] border-[#E7AF28] hover:bg-[#E7AF28] hover:fill-white hover:border-[#E7AF28]"
                 >
                     <CaretRight />

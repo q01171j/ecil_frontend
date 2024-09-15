@@ -3,7 +3,28 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 
 /* Imports -> PAGES OR ROUTES */
-import { Index, About, Courses, Course, Jobs, Job, Teachers, Teacher, Privacity, Terms, Complaints, Faq, ContactUs, SignIn, SignUp } from "@routes";
+import {
+    Index,
+    About,
+    Courses,
+    Course,
+    Jobs,
+    Job,
+    Teachers,
+    Teacher,
+    Privacity,
+    Terms,
+    Complaints,
+    Faq,
+    Testimonials,
+    SignIn,
+    SignUp,
+    NotFound,
+    SignUpCode,
+    SignUpPhoto,
+    SignUpTypeUser,
+    SignUpData,
+} from "@routes";
 
 /* Imports -> LAYOUTS */
 import { Layout, Auth } from "@layouts";
@@ -12,11 +33,11 @@ import { Layout, Auth } from "@layouts";
 import { Protected } from "@components";
 
 /* Imports -> DATA ROOTS */
-import { rootsData } from "@data"
+import { rootsData } from "@data";
 
 /* Imports -> REDUX */
 import { useDispatch } from "react-redux";
-import { scrollSlice } from "@features/scroll/scrollSlice";
+//import { scrollYSlice } from "@features/scrollY/scrollYSlice";
 
 function App() {
     /* Function Dispacth Obtain ScrollY */
@@ -49,7 +70,10 @@ function App() {
                 <Route path={rootsData.courses} element={<Courses />} />
 
                 {/* Route Curso Individual */}
-                <Route path={`${rootsData.courses}/:coursesId`} element={<Course />} />
+                <Route
+                    path={`${rootsData.courses}/:coursesId`}
+                    element={<Course />}
+                />
 
                 {/* Route Todos Los Trabajos */}
                 <Route path={rootsData.jobs} element={<Jobs />} />
@@ -61,7 +85,10 @@ function App() {
                 <Route path={rootsData.teachers} element={<Teachers />} />
 
                 {/* Route Docente */}
-                <Route path={`${rootsData.teachers}/:teachersId`} element={<Teacher />} />
+                <Route
+                    path={`${rootsData.teachers}/:teachersId`}
+                    element={<Teacher />}
+                />
 
                 {/* Route Politicas de Privacidad */}
                 <Route path={rootsData.privacy} element={<Privacity />} />
@@ -76,7 +103,10 @@ function App() {
                 <Route path={rootsData.faq} element={<Faq />} />
 
                 {/* Route Contactanos */}
-                <Route path={rootsData.contactUs} element={<ContactUs />} />
+                <Route
+                    path={rootsData.testimonials}
+                    element={<Testimonials />}
+                />
             </Route>
 
             {/* Grupo de Route Autentificación */}
@@ -90,6 +120,18 @@ function App() {
                 {/* Route Registrarse */}
                 <Route path={rootsData.signUp} element={<SignUp />} />
 
+                {/* Route Registrarse Code */}
+                <Route path={rootsData.signUpCode} element={<SignUpCode />} />
+
+                {/* Route Registrarse Tipo de Uusario */}
+                <Route path={rootsData.signUpTypeUser} element={<SignUpTypeUser />} />
+
+                {/* Route Registrarse Foto */}
+                <Route path={rootsData.signUpPhoto} element={<SignUpPhoto />} />
+
+                {/* Route Registrarse Datos */}
+                <Route path={rootsData.signUpData} element={<SignUpData />} />
+
                 {/* ALl - moment */}
             </Route>
 
@@ -98,11 +140,10 @@ function App() {
                 <Route index element={<Navigate to="" />} />
 
                 {/* Route Inicio */}
-
             </Route>
 
             {/* Not Fount */}
-            <Route path={rootsData.notFound} element={<div>Not Found</div>} />
+            <Route path={rootsData.notFound} element={<NotFound />} />
         </Routes>
     );
 }

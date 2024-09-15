@@ -12,10 +12,10 @@ function CardCourse() {
             </div>
             <div className="grid gap-4 p-3">
                 <h3 className="font-medium text-xl leading-none">
-                    Curso de Mozeria Experto xd xd
+                    Curso de Atención al Cliente
                 </h3>
                 <p className="text-sm text-justify text-gray-500">
-                    Curso Intensivo para mozeria.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </p>
                 <div className="flex justify-between items-center">
                     <span className="text-sm">8 Lecciones</span>

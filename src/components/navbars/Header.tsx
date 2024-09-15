@@ -13,7 +13,7 @@ function Header() {
     const [isMenuOpen, handleToggle] = useToggle();
 
     /* --- Scroll State --- */
-    const scrollY = useScroll();
+    const { scrollY, handleScrollZero } = useScroll();
 
     /* --- User --- */
     const user = false;
@@ -43,7 +43,7 @@ function Header() {
                 </button>
 
                 {/* Logo */}
-                <Link to={headerData.index} className={``}>
+                <Link to={headerData.index} onClick={handleScrollZero} className={``}>
                     <Logo width={80} />
                 </Link>
             </div>
@@ -51,7 +51,7 @@ function Header() {
             {/* NavLinks */}
             <nav className="flex gap-12">
                 {headerData.links.map((item, index) => (
-                    <LinkItemTwo key={index} link={item.link}>
+                    <LinkItemTwo key={index} link={item.link} onClick={handleScrollZero}>
                         {item.title}
                     </LinkItemTwo>
                 ))}
@@ -62,7 +62,7 @@ function Header() {
                 {user ? (
                     ""
                 ) : (
-                    <ButtonOne href={headerData.register.link}>
+                    <ButtonOne href={headerData.register.link} onClick={handleScrollZero}>
                         {headerData.register.title}
                     </ButtonOne>
                 )}
@@ -74,6 +74,7 @@ function Header() {
                     className={clsx(
                         "bg-transparent text-[#2F6B85] hover:bg-transparent hover:text-[#224e61]"
                     )}
+                    onClick={handleScrollZero}
                 >
                     {user ? headerData.dashboard.title : headerData.login.title}
                 </ButtonOne>

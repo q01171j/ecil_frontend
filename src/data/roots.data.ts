@@ -17,6 +17,10 @@ const rootsData = {
     auth: "/autenticacion",
     signIn: "iniciar-sesion",
     signUp: "registrarse",
+    signUpCode: "registrarse-code",
+    signUpTypeUser: "registrarse-tipo-usuario",
+    signUpPhoto: "registrarse-foto",
+    signUpData: "registrarse-datos",
 
     /* Routes Plataforma */
     platform: "/plataforma",

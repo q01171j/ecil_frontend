@@ -22,11 +22,11 @@ const headerData = {
     ],
     register: {
         title: "Registrate",
-        link: roots.signUp,
+        link: roots.auth + "/" + roots.signUp,
     },
     login: {
         title: "Ingresar",
-        link: roots.signIn,
+        link: roots.auth + "/" + roots.signIn,
     },
     dashboard: {
         title: "Plataforma",

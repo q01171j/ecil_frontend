@@ -4,8 +4,12 @@ import { Logo } from "@assets";
 import { ContentListOne, LinkItemOne } from "@components";
 import clsx from "clsx";
 import { footerData } from "@data";
+import { useScroll } from "@hooks"
 
 function Footer() {
+    
+    const { handleScrollZero } = useScroll();
+
     return (
         <footer className={`mt-16 px-16 py-16 grid gap-10 bg-gray-100`}>
             <section className={`flex justify-between`}>
@@ -33,16 +37,19 @@ function Footer() {
                 <ContentListOne
                     data={footerData.comunity}
                     classContainer={clsx("min-w-[131px]")}
+                    onClick={handleScrollZero}
                 />
 
                 <ContentListOne
                     data={footerData.courses}
                     classContainer={clsx("min-w-[131px]")}
+                    onClick={handleScrollZero}
                 />
 
                 <ContentListOne
                     data={footerData.help}
                     classContainer={clsx("min-w-[131px]")}
+                    onClick={handleScrollZero}
                 />
             </section>
 
@@ -51,19 +58,19 @@ function Footer() {
             <section className={`flex justify-between`}>
                 <ul className={`flex gap-4`}>
                     <li>
-                        <Link to="/terminos-y-condiciones">
+                        <Link to="/terminos-y-condiciones" onClick={handleScrollZero}>
                             Términos y Condiciones
                         </Link>
                     </li>
                     <li className={`text-gray-400`}>/</li>
                     <li>
-                        <Link to="/politica-de-privacidad">
+                        <Link to="/politicas-de-privacidad" onClick={handleScrollZero}>
                             Política de Privacidad
                         </Link>
                     </li>
                     <li className={`text-gray-400`}>/</li>
                     <li>
-                        <Link to="/libro-de-reclamaciones">
+                        <Link to="/libro-de-reclamaciones" onClick={handleScrollZero}>
                             Libro de Reclamaciones
                         </Link>
                     </li>

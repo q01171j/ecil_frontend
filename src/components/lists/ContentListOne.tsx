@@ -3,7 +3,7 @@ import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { ContentListItemsProps } from "@interfaces";
 
-function ContentListOne({ data, classContainer, classTitle, classLink }: ContentListItemsProps) {
+function ContentListOne({ data, classContainer, classTitle, classLink, onClick }: ContentListItemsProps) {
 
     return (
         <div className={twMerge(clsx(
@@ -23,6 +23,7 @@ function ContentListOne({ data, classContainer, classTitle, classLink }: Content
                             className={clsx(
                                 classLink
                             )}
+                            onClick={onClick}
                         >
                             {item.title}
                         </LinkItemOne>

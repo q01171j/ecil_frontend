@@ -28,6 +28,15 @@ import Trophy from "./regular/Trophy";
 import Flag from "./regular/Flag";
 import NavigationArrow from "./regular/NavigationArrow";
 import Lightbulb from "./regular/Lightbulb";
+import Check from "./regular/Check";
+import IdentificationCard from "./regular/IdentificationCard";
+import Lock from "./regular/Lock";
+import Eye from "./regular/Eye";
+import EyeSlash from "./regular/EyeSlash";
+import Shield from "./regular/Shield";
+import File from "./regular/File";
+import Buildings from "./regular/Buildings";
+import User from "./regular/User";
 
 export {
     Airplay,
@@ -35,12 +44,20 @@ export {
     BagSimple,
     Books,
     Briefcase,
+    Buildings,
+    User,
+    Shield,
+    Eye,
+    File,
+    EyeSlash,
+    Lock,
     EnvelopeSimple,
     Trophy,
     Gear,
     NavigationArrow,
     Handshake,
     List,
+    IdentificationCard,
     MagnifyingGlass,
     MapPin,
     Moon,
@@ -59,6 +76,6 @@ export {
     CaretLeft,
     PhoneCallFill,
     PhoneCall,
-    X
-}
-
+    Check,
+    X,
+};

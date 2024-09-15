@@ -61,7 +61,7 @@ const footerData = {
         title: 'Cursos',
         links: linksApi.map(data => ({
             ...data,
-            url: `/${roots.courses}/${data.url}`
+            url: `${roots.courses}/${data.url}`
         }))
     },
     help: {

@@ -16,9 +16,9 @@ function CardTeacher() {
                     <div className="w-5/6 h-full rounded-xl shadow-xl hover:shadow-2xl flex justify-end items-center transition-all">
                         <div className="w-[70%] h-[80%] pr-8 flex flex-col justify-between">
                             <div className="grid gap-2">
-                                <span className="text-base">Abogado</span>
+                                <span className="text-base">Abogada</span>
                                 <h3 className="text-lg font-medium">
-                                    Cristian Dominguez Herrera
+                                    Louisa Hernandez Ferrera 
                                 </h3>
                             </div>
                             <p className="text-sm text-justify">

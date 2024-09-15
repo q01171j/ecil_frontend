@@ -1,54 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 html::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #2F6B85;
-  border-radius: 10px;
+    background-color: #2f6b85;
+    border-radius: 10px;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .ContentHero {
-  height: calc(100vh - 4rem);
+    height: calc(100vh - 4rem);
 }
 
 .font-EmbedCode {
-  font-family: "Merriweather", serif;
+    font-family: "Merriweather", serif;
 }
 
 .hero-img {
-  background-image: url('./assets/img/HeroOne.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 1rem;
-  @apply text-white border p-3 rounded bottom-0 absolute;
-}
-
-.swiper-button-prev {
-  left: calc(50% - 3rem);
+    background-image: url("./assets/img/HeroOne.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .swiper-button-next {
-  right: calc(50% - 3rem);
+    right: calc(50% - 3rem);
+}
+
+.swiper-columns-2 {
+    grid-auto-columns: calc((100% / 2) - 9px);
+}
+
+.swiper-columns-3 {
+	grid-auto-columns: calc((100% / 3) - 12px);
+}
+
+.swiper-columns-4 {
+	grid-auto-columns: calc((100% / 4) - 15px);
+}
+
+@media screen and (max-width: 900px) {
+    
 }
